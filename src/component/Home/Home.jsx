@@ -1,5 +1,6 @@
 import image1 from '../../assets/image1.png'
 import vector from '../../assets/Vector.png'
+import Tabs from '../Tabs/Tabs';
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
                 <div className='flex justify-center items-center'>
                     <div className="flex flex-col  items-center justify-center ">
                         <div className='z-10 absolute left-80'>
-                        <h1 className="text-[80px] text-white font-bold uppercase backdrop-blur-sm bg-red-500/30 p-1">Taste the authentic <br />
+                        <h1 className="text-[80px] text-white font-bold uppercase backdrop-blur-sm bg-[#BD1F17]/30 p-1">Taste the authentic <br />
                         Saudi cuisine</h1>
                         <p className='text-white'>Among the best Saudi chefs in the world, serving <br /> you something beyond flavor. </p>
                         <div>
@@ -34,7 +35,7 @@ const Home = () => {
             </div>
         </section>
         <section>
-
+            <Tabs></Tabs>        
         </section>
         </div>
     );
