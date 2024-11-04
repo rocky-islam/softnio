@@ -1,5 +1,6 @@
 import { useState } from "react";
 import image2 from "../../assets/Image2.png";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -97,10 +98,11 @@ const Tabs = () => {
             </div>
           </div>
           <div>
-            <div>
+            <div className="flex justify-start items-center gap-24 mt-24">
                 <div><button className="btn bg-warning">About More</button></div>
-                <div>
-                    
+                <div className="flex  items-center">
+                <FaPhoneVolume size={25}  color="#BD1F17"/>
+                <p className="font-bold text-lg">+88 3426 739 485</p>
                 </div>
             </div>
           </div>
