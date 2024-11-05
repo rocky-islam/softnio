@@ -4,12 +4,13 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { BsBoxSeam } from "react-icons/bs";
 import { GiAchievement } from "react-icons/gi";
 import { LuShoppingBag } from "react-icons/lu";
+import rightSideImage from '../../assets/rightsideiimg.png'
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
   return (
-    <div>
-      <div className="flex justify-center gap-24 p-14">
+    <div className="relative">
+      <div className="flex justify-center gap-24 p-14 ">
         <section>
           <div>
             <img src={image2} alt="image" className="rounded-lg" />
@@ -110,9 +111,10 @@ const Tabs = () => {
             </div>
           </div>
         </section>
+        
       </div>
       <div>
-        <section className="flex justify-center items-center gap-32 mb-10">
+        <section className="flex justify-center items-center gap-32 mb-28">
           <div className=" flex justify-center items-center gap-3">
             <div className="p-4 rounded-full  shadow-2xl shadow-gray-500">
             <span ><BsBoxSeam color="#BD1F17" size={25} /></span>
@@ -145,6 +147,9 @@ const Tabs = () => {
           
         </section>
       </div>
+      <div>
+          <img src={rightSideImage} alt="" className="absolute right-0 bottom-7 hidden md:flex"/>
+        </div>
     </div>
   );
 };
