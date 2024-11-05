@@ -1,6 +1,9 @@
 import { useState } from "react";
 import image2 from "../../assets/Image2.png";
 import { FaPhoneVolume } from "react-icons/fa6";
+import { BsBoxSeam } from "react-icons/bs";
+import { GiAchievement } from "react-icons/gi";
+import { LuShoppingBag } from "react-icons/lu";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -106,6 +109,40 @@ const Tabs = () => {
                 </div>
             </div>
           </div>
+        </section>
+      </div>
+      <div>
+        <section className="flex justify-center items-center gap-32 mb-10">
+          <div className=" flex justify-center items-center gap-3">
+            <div className="p-4 rounded-full  shadow-2xl shadow-gray-500">
+            <span ><BsBoxSeam color="#BD1F17" size={25} /></span>
+            </div>
+            <div>
+            <h3 className="font-bold text-3xl uppercase">Fast Delivery</h3>
+            <p className="font-normal text-lg">Within 30 Minutes</p>
+            </div>
+          </div>
+          <div className=" flex justify-center items-center gap-3">
+            <div className="p-4 rounded-full  shadow-2xl shadow-gray-500">
+            <span ><GiAchievement color="#BD1F17" size={25}/> </span>
+            </div>
+            <div>
+            <h3 className="font-bold text-3xl uppercase">absolute dining</h3>
+            <p className="font-normal text-lg">Best buffet restaurant</p>
+            </div>
+          </div>
+          <div className=" flex justify-center items-center gap-3">
+            <div className="p-4 rounded-full  shadow-2xl shadow-gray-500">
+            <span ><LuShoppingBag color="#BD1F17" size={25}/></span>
+            </div>
+            <div>
+            <h3 className="font-bold text-3xl uppercase">pickup delivery</h3>
+            <p className="font-normal text-lg">Grab your food order</p>
+            </div>
+          </div>
+          
+          
+          
         </section>
       </div>
     </div>

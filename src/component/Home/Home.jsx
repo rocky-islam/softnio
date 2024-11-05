@@ -6,11 +6,11 @@ const Home = () => {
     return (
         <div>
         <section className='mb-14'>
-            <div className="bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] w-full h-[1080px] flex items-center ">
-                <div className='flex justify-center items-center'>
+            <div className="bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] w-full h-[940px] flex items-center ">
+                <div className='flex justify-center items-center w-full'>
                     <div className="flex flex-col  items-center justify-center ">
-                        <div className='z-10 absolute left-80'>
-                        <h1 className="text-[80px] text-white font-bold uppercase backdrop-blur-sm bg-[#BD1F17]/30 p-1">Taste the authentic <br />
+                        <div className='z-10 absolute lg:left-[275px]'>
+                        <h1 className="lg:text-[90px]  text-white font-bold uppercase backdrop-blur-sm bg-[#BD1F17]/30 p-1">Taste the authentic <br />
                         Saudi cuisine</h1>
                         <p className='text-white'>Among the best Saudi chefs in the world, serving <br /> you something beyond flavor. </p>
                         <div>
@@ -18,7 +18,7 @@ const Home = () => {
                         </div>
                         </div>
                     </div>
-                    <div className='absolute right-[150px]'>
+                    <div className='absolute right-36 '>
                         <div className='relative'>
                             <div >
                                 <img src={image1} alt="" className='rounded-xl'/>
