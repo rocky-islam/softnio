@@ -1,6 +1,7 @@
 import image1 from '../../assets/image1.png'
 import vector from '../../assets/Vector.png'
 import FoodItems from '../FoodItems/FoodItems';
+import Form from '../Form/Form';
 import Tabs from '../Tabs/Tabs';
 
 const Home = () => {
@@ -40,6 +41,9 @@ const Home = () => {
         </section>
         <section>
             <FoodItems></FoodItems>
+        </section>
+        <section>
+            <Form></Form>
         </section>
         </div>
     );

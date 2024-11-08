@@ -28,7 +28,7 @@ const FoodItems = () => {
           </div>
           <div className="flex">
             <p className="button-prev cursor-pointer p-4 bg-white rounded-full shadow-2xl shadow-gray-500 mx-4 hover:text-red-500"><IoIosArrowBack className="hover:text-[#BD1F17]"/></p>
-            <p className="button-next cursor-pointer p-4 bg-white rounded-full shadow-2xl shadow-gray-500 mx-4"><IoIosArrowForward className="hover:text-[#BD1F17]"/></p>
+            <p className="button-next cursor-pointer p-4 bg-white rounded-full shadow-2xl shadow-gray-500 mx-4 hover:text-red-500"><IoIosArrowForward className="hover:text-[#BD1F17]"/></p>
           </div>
         </div>
         <div>
