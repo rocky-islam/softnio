@@ -84,7 +84,7 @@ const Review = () => {
                   className="w-1/2 bg-center bg-cover cursor-pointer"
                   style={{ backgroundImage: `url(${video})` }}
                 >
-                  Right
+                  
                 </div>
               </div>
             </SwiperSlide>
@@ -120,7 +120,7 @@ const Review = () => {
                   className="w-1/2 bg-center bg-cover"
                   style={{ backgroundImage: `url(${video})` }}
                 >
-                  Right
+                  
                 </div>
               </div>
             </SwiperSlide>
@@ -156,13 +156,13 @@ const Review = () => {
                   className="w-1/2 bg-center bg-cover"
                   style={{ backgroundImage: `url(${video})` }}
                 >
-                  Right
+                  
                 </div>
               </div>
             </SwiperSlide>
             
           </Swiper>
-          <div className="absolute z-50 bottom-5">
+          <div className="absolute z-10 bottom-5">
             <img src={victor} alt="" />
           </div>
         </div>

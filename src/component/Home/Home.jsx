@@ -1,6 +1,7 @@
 import image1 from '../../assets/image1.png'
 import vector from '../../assets/Vector.png'
 import FoodItems from '../FoodItems/FoodItems';
+import Footer from '../Footer/Footer';
 import Form from '../Form/Form';
 import Review from '../Review/Review';
 import Tabs from '../Tabs/Tabs';
@@ -49,6 +50,9 @@ const Home = () => {
         <section>
             <Review></Review>
         </section>
+        <footer>
+            <Footer></Footer>
+        </footer>
         </div>
     );
 };
