@@ -1,9 +1,22 @@
 import { MdDateRange } from "react-icons/md";
 import bg from "../../assets/rsz_1sec4bgi.png";
 
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 const Form = () => {
+
+    const handleBook = (e) =>{
+        e.preventDefault();
+        const name = e.target.name.value;
+        toast(`"${name}", Your booking is Completed`);
+        // console.log(name)
+        e.target.value='';
+    }
+
+
   return (
-    <div
+    <div id="book"
       className="h-[788px] bg-cover bg-center"
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -23,17 +36,19 @@ const Form = () => {
             </p>
           </div>
 
-          <div>
+          <form onSubmit={handleBook}>
             {/* Form */}
             <div className="flex flex-col lg:flex-row gap-4  ">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name*"
                 className="input border border-white rounded-none focus:ring focus:ring-white input-bordered w-full max-w-xs mx-2 bg-transparent"
                 required
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
                 className="input input-bordered w-full max-w-xs border border-white rounded-none focus:ring focus:ring-white bg-transparent"
               />
@@ -42,6 +57,7 @@ const Form = () => {
             <div className="flex flex-col lg:flex-row gap-4 mt-4 relative">
               <input
                 type="text"
+                name="date"
                 placeholder="Reservation Date"
                 className="input border border-white rounded-none focus:ring focus:ring-white input-bordered w-full max-w-xs mx-2 bg-transparent"
                 required
@@ -49,37 +65,23 @@ const Form = () => {
               <span className="absolute top-3 left-72"><MdDateRange size={25}/></span>
               <input
                 type="number"
+                name="number"
                 placeholder="Total People"
                 className="input input-bordered w-full max-w-xs border border-white rounded-none focus:ring focus:ring-white bg-transparent"
               />
             </div>
-            {/* <div className="mt-4 flex flex-col lg:flex-row gap-4 ">
-              <div>
-              <label htmlFor="" className="relative ">
-              <input
-                type="text"
-                placeholder="Reservation Date"
-                className="input input-bordered w-full max-w-xs border border-white rounded-none focus:ring focus:ring-white bg-transparent"
-              />
-              <span className="absolute top-0 right-4"><MdDateRange size={25}/></span>
-              </label>
-              </div>
-              <input
-                type="number"
-                placeholder="Total People"
-                className="input input-bordered w-full max-w-xs border border-white rounded-none focus:ring focus:ring-white bg-transparent "
-              />
-            </div> */}
+            
             <div className="mt-4 ml-2">
-            <textarea className="w-[330px] lg:w-1/2 border p-2 border-white rounded-none focus:ring focus:ring-white bg-transparent " placeholder="Message" rows="4"></textarea>
+            <textarea name="message" className="w-[330px] lg:w-1/2 border p-2 border-white rounded-none focus:ring focus:ring-white bg-transparent " placeholder="Message" rows="4"></textarea>
             </div>
             {/* test */}
             <div className="">
-            <button className="btn px-8 btn-warning mt-5">Book Now</button>
+            <button type="submit" className="btn px-8 btn-warning mt-5">Book Now</button>
             </div>
-          </div>
+          </form>
         </div>
       </section>
+      <ToastContainer theme="dark"/>
     </div>
   );
 };

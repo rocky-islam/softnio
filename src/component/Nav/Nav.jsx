@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 import logo from '../../assets/Logo.png'
 import { IoIosMenu } from "react-icons/io";
@@ -6,10 +6,10 @@ import { IoIosMenu } from "react-icons/io";
 const Nav = () => {
   const navLink = (
     <>
-      <NavLink className="mx-2 my-2">
+      <NavLink to='/' className="mx-2 my-2">
         <li>Home</li>
       </NavLink>
-      <NavLink className="mx-2 my-2">
+      <NavLink to='/about' className="mx-2 my-2">
         <li>About</li>
       </NavLink>
       <NavLink className="mx-2 my-2">
@@ -46,7 +46,7 @@ const Nav = () => {
         </div>
         
         <div className=""> {/* nav flex*/}
-          <a className="btn hidden lg:flex bg-[#FEBF00]">BOOK A TABLE</a>
+          <a href="#book" className="btn hidden lg:flex bg-[#FEBF00]">BOOK A TABLE</a>
 {/* dropdown menu */}
           <div className="dropdown relative">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
