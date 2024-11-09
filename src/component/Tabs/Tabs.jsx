@@ -56,10 +56,10 @@ const Tabs = () => {
             <div className="mt-4">
               {activeTab === "tab1" && (
                 <div>
-                  <h2 className="text-4xl font-bold">
+                  <h2 className="text-[40px] lg:text-4xl font-bold leading-none">
                     Exceptional culinary <br /> experience and delicious food
                   </h2>
-                  <p className="mt-2 text-gray-600">
+                  <p className="mt-2 text-gray-600 text-justify">
                     TLorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Ornare non sed est cursus. Vel hac convallis ipsum, facilisi
                     odio pellentesque bibendum viverra tempus. Lorem ipsum dolor
@@ -71,10 +71,10 @@ const Tabs = () => {
               )}
               {activeTab === "tab2" && (
                 <div>
-                  <h2 className="text-4xl font-bold">
+                  <h2 className="text-[40px] lg:text-4xl font-bold leading-none">
                     Exceptional culinary <br /> experience and delicious food
                   </h2>
-                  <p className="mt-2 text-gray-600">
+                  <p className="mt-2 text-gray-600 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Ornare non sed est cursus. Vel hac convallis ipsum, facilisi
                     odio pellentesque bibendum viverra tempus. Lorem ipsum dolor
@@ -86,10 +86,10 @@ const Tabs = () => {
               )}
               {activeTab === "tab3" && (
                 <div>
-                  <h2 className="text-4xl font-bold">
+                  <h2 className="text-[40px] lg:text-4xl font-bold leading-none">
                     Exceptional culinary <br /> experience and delicious food
                   </h2>
-                  <p className="mt-2 text-gray-600">
+                  <p className="mt-2 text-gray-600 text-justify">
                     TLorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Ornare non sed est cursus. Vel hac convallis ipsum, facilisi
                     odio pellentesque bibendum viverra tempus. Lorem ipsum dolor
@@ -102,7 +102,7 @@ const Tabs = () => {
             </div>
           </div>
           <div>
-            <div className="flex justify-start items-center gap-24 mt-24">
+            <div className="flex justify-start items-center lg:gap-24  gap-10 mt-24">
                 <div><button className="btn bg-warning">About More</button></div>
                 <div className="flex  items-center">
                 <FaPhoneVolume size={25}  color="#BD1F17"/>
@@ -114,13 +114,13 @@ const Tabs = () => {
         
       </div>
       <div>
-        <section className="flex justify-center items-center gap-32 mb-28">
+        <section className="flex flex-col lg:flex-row justify-center items-center gap-32 mb-28">
           <div className=" flex justify-center items-center gap-3">
             <div className="p-4 rounded-full  shadow-2xl shadow-gray-500">
             <span ><BsBoxSeam color="#BD1F17" size={25} /></span>
             </div>
             <div>
-            <h3 className="font-bold text-3xl uppercase">Fast Delivery</h3>
+            <h3 className="font-bold text-2xl lg:text-3xl uppercase">Fast Delivery</h3>
             <p className="font-normal text-lg">Within 30 Minutes</p>
             </div>
           </div>
@@ -129,7 +129,7 @@ const Tabs = () => {
             <span ><GiAchievement color="#BD1F17" size={25}/> </span>
             </div>
             <div>
-            <h3 className="font-bold text-3xl uppercase">absolute dining</h3>
+            <h3 className="font-bold text-2xl lg:text-3xl uppercase">absolute dining</h3>
             <p className="font-normal text-lg">Best buffet restaurant</p>
             </div>
           </div>
@@ -138,7 +138,7 @@ const Tabs = () => {
             <span ><LuShoppingBag color="#BD1F17" size={25}/></span>
             </div>
             <div>
-            <h3 className="font-bold text-3xl uppercase">pickup delivery</h3>
+            <h3 className="font-bold text-2xl lg:text-3xl uppercase">pickup delivery</h3>
             <p className="font-normal text-lg">Grab your food order</p>
             </div>
           </div>
@@ -147,7 +147,7 @@ const Tabs = () => {
           
         </section>
       </div>
-      <div>
+      <div className="hidden lg:block">
           <img src={rightSideImage} alt="" className="absolute right-0 bottom-7 hidden md:flex"/>
         </div>
     </div>
