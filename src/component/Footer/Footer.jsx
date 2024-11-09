@@ -8,18 +8,18 @@ import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <div
-      className="relative h-full bg-center bg-cover bg-blend-overlay"
+      className="relative h-full bg-center bg-cover bg-blend-overlay "
       style={{ backgroundImage: `url(${footer})` }}
     >
       <div className="absolute inset-0 bg-black opacity-70"></div>
       <div>
-        <section className="text-white z-10 relative w-[1320px] mx-auto py-28">
+        <section className="text-white z-10 relative lg:w-[1320px] mx-auto py-28">
           <div className="my-28">
-            <h1 className="text-5xl font-bold text-center uppercase">
+            <h1 className="text-[40px] lg:text-5xl font-bold text-center uppercase">
               We ready to have you the best dining experiences
             </h1>
           </div>
-          <div className="flex justify-between items-center gap-24">
+          <div className="flex justify-between items-center gap-24 flex-col lg:flex-row">
             <div className="flex flex-col justify-center items-center">
               <BsClock className="text-[#FEBF00]" size={25} /> <br />
               <h1 className="uppercase font-bold text-2xl">

@@ -8,9 +8,9 @@ import Tabs from '../Tabs/Tabs';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
         <section className='mb-14'>
-            <div className="bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] lg:w-full lg:h-[940px] w-96 h-[730px] lg:flex items-center ">
+            <div className="bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] lg:w-full lg:h-[940px] h-[730px] lg:flex items-center ">
                 <div className='flex justify-center flex-col lg:flex-row items-center w-full '>
                     {/* left side */}
                     <div className="flex flex-col  items-center justify-center px-8">

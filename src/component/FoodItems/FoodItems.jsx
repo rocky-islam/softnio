@@ -15,20 +15,22 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const FoodItems = () => {
   return (
     <div className="bg-[#FBF7F2] relative md:p-16">
-      <section className="w-[1320px] mx-auto py-28">
+      <section className="lg:w-[1320px] mx-auto p-10 lg:py-28">
         <div className="flex justify-between items-center relative">
           <div>
-          <p className="flex items-center gap-2 text-xl font-bold text-[#BD1F17]">
+          <p className="flex items-center gap-2 text-base lg:text-xl font-bold text-[#BD1F17]">
             <span className="border-2  h-3  w-3 bg-[#BD1F17] inline-block">
               {" "}
             </span>{" "}
             Crispy, Every Bite Taste
           </p>
-          <h1 className="font-bold text-6xl">POPULAR FOOD ITEMS</h1>
+          <h1 className="font-bold text-4xl lg:text-6xl">POPULAR FOOD ITEMS</h1>
           </div>
-          <div className="flex">
+          <div className="hidden lg:block">
+          <div className="flex ">
             <p className="button-prev cursor-pointer p-4 bg-white rounded-full shadow-2xl shadow-gray-500 mx-4 hover:text-red-500"><IoIosArrowBack className="hover:text-[#BD1F17]"/></p>
             <p className="button-next cursor-pointer p-4 bg-white rounded-full shadow-2xl shadow-gray-500 mx-4 hover:text-red-500"><IoIosArrowForward className="hover:text-[#BD1F17]"/></p>
+          </div>
           </div>
         </div>
         <div>
@@ -224,23 +226,22 @@ const FoodItems = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              
-              
-
               {/* Custom Navigation Buttons */}
-              {/* <div className="swiper-button-prev absolute top-[-20px] left-4 w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center cursor-pointer z-10">
-                ‹
-              </div>
-              <div className="swiper-button-next absolute top-[-20px] right-4 w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center cursor-pointer z-10">
-                ›
-              </div> */}
             </Swiper>
+          </div>
+
+          {/* nav btn for slider mobile device */}
+          <div className="md:hidden mt-10">
+          <div className="flex justify-center items-center">
+            <p className="button-prev cursor-pointer p-4 bg-white rounded-full shadow-2xl shadow-gray-500 mx-4 hover:text-red-500"><IoIosArrowBack className="hover:text-[#BD1F17]"/></p>
+            <p className="button-next cursor-pointer p-4 bg-white rounded-full shadow-2xl shadow-gray-500 mx-4 hover:text-red-500"><IoIosArrowForward className="hover:text-[#BD1F17]"/></p>
+          </div>
           </div>
         </div>
 
         
       </section>
-      <div className="absolute left-0 top-1/3">
+      <div className="absolute left-0 top-1/3 hidden lg:block">
             <img src={sec3LeftImg} alt="" />
         </div>
     </div>

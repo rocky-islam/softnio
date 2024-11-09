@@ -9,7 +9,7 @@ import rightSideImage from '../../assets/rightsideiimg.png'
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
   return (
-    <div className="relative">
+    <div className="relative w-[390px] lg:w-full">
       <div className="flex flex-col lg:flex-row justify-center lg:gap-24 lg:p-14 gap-10 p-5">
         <section>
           <div>

@@ -28,7 +28,7 @@ const Nav = () => {
   );
 
   return (
-    <div className="bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] w-full sticky top-0 z-50">
+    <div className="bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)]  lg:w-full sticky top-0 z-50">
       <div className="navbar bg-transparent lg:justify-around justify-between">
         <div className=""> 
 
@@ -48,13 +48,13 @@ const Nav = () => {
         <div className=""> {/* nav flex*/}
           <a className="btn hidden lg:flex bg-[#FEBF00]">BOOK A TABLE</a>
 {/* dropdown menu */}
-          <div className="dropdown">
+          <div className="dropdown relative">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <IoIosMenu size={25}/>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 p-2 shadow bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] "
+              className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 p-2 shadow bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] absolute right-3"
             >
               {navLink}
             </ul>
