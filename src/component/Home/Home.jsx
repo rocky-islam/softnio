@@ -10,22 +10,24 @@ const Home = () => {
     return (
         <div>
         <section className='mb-14'>
-            <div className="bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] w-full h-[940px] flex items-center ">
-                <div className='flex justify-center items-center w-full'>
-                    <div className="flex flex-col  items-center justify-center ">
-                        <div className='z-10 absolute lg:left-[275px]'>
-                        <h1 className="lg:text-[90px]  text-white font-bold uppercase backdrop-blur-sm bg-[#BD1F17]/30 p-1">Taste the authentic <br />
-                        Saudi cuisine</h1>
+            <div className="bg-[linear-gradient(123.4deg,_#BD1F17_40.8%,_#A61D13_76.4%,_#8E1B0F_120.69%)] lg:w-full lg:h-[940px] w-96 h-[730px] lg:flex items-center ">
+                <div className='flex justify-center flex-col lg:flex-row items-center w-full '>
+                    {/* left side */}
+                    <div className="flex flex-col  items-center justify-center px-8">
+                        <div className='z-10 lg:absolute lg:left-[275px]'>
+                        <h1 className="lg:text-[90px] text-5xl  text-white font-bold uppercase backdrop-blur-sm bg-[#BD1F17]/30 p-1">Taste the authentic <br />
+                        Saudi cuisine</h1> <br />
                         <p className='text-white'>Among the best Saudi chefs in the world, serving <br /> you something beyond flavor. </p>
                         <div>
-                        <button className="btn btn-warning mt-9">EXPLORE MENU</button>
+                        <button className="btn btn-warning my-9">EXPLORE MENU</button>
                         </div>
                         </div>
                     </div>
-                    <div className='absolute right-36 '>
+                    {/* right Side */}
+                    <div className='lg:absolute lg:right-36 '>
                         <div className='relative'>
-                            <div >
-                                <img src={image1} alt="" className='rounded-xl'/>
+                            <div className=''>
+                                <img src={image1} alt="" className='rounded-xl w-80 lg:w-full'/>
                                 <div className='absolute -top-5 -right-5'>
                                     <img src={vector} alt="" />
                                 </div>

@@ -10,10 +10,10 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
   return (
     <div className="relative">
-      <div className="flex justify-center gap-24 p-14 ">
+      <div className="flex flex-col lg:flex-row justify-center lg:gap-24 lg:p-14 gap-10 p-5">
         <section>
           <div>
-            <img src={image2} alt="image" className="rounded-lg" />
+            <img src={image2} alt="image" className="rounded-lg w-80 lg:w-full" />
           </div>
         </section>
         <section>
